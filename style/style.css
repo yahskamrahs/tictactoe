@@ -1,0 +1,109 @@
+ body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #1e1e1e;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      margin: 0;
+    }
+    h1{
+      color: #4CAF50;
+      margin-top: 40px;
+      margin-bottom: 50%;
+    }
+
+    .start-window, .game-window, .modal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .button {
+      padding: 10px 20px;
+      width: 180px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .button-green {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin-top: 70%;
+    }
+
+    td {
+      width: 60px;
+      height: 60px;
+      border: 1px solid #ccc;
+      text-align: center;
+      font-size: 24px;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: #333;
+      padding: 20px;
+      width: 30%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-button {
+      margin-top: 10px;
+    }
+
+    .play-again-button {
+      display: none;
+      margin-top: auto;
+    }
+
+    .back-to-home {
+      position: absolute;
+      
+      top: 12px;
+      left: 12px;
+      cursor: pointer;
+      font-size: 30px;
+      color: #fff;
+    }
+    @media only screen and (max-width: 600px) {
+      .modal-content {
+        background-color: #333;
+        padding: 20px;
+        width: 70%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      } 
+
+
+    }
